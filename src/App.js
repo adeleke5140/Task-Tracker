@@ -56,7 +56,7 @@ export default function App() {
   return (
     <div className="container">
       <Header
-        title="Task Tracker"
+        title="To-do List."
         onAdd={() => setShowAddTask(() => !showAddTask)}
         showAdd={showAddTask}
       />

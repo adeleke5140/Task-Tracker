@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Lexend", sans-serif;
 }
 
 .container {
@@ -17,7 +17,6 @@ body {
   min-height: 300px;
   border: 1px solid steelblue;
   padding: 30px;
-  border-radius: 5px;
 }
 
 .header {
@@ -27,6 +26,14 @@ body {
   margin-bottom: 20px;
 }
 
+.closed {
+  color: #33aaff;
+}
+
+.open {
+  color: green;
+}
+
 .btn {
   display: inline-block;
   background: #33aaff;
@@ -34,11 +41,15 @@ body {
   border: none;
   padding: 10px 20px;
   margin: 5px;
-  border-radius: 5px;
   cursor: pointer;
   text-decoration: none;
   font-size: 15px;
   font-family: inherit;
+  transition: transform 500ms;
+}
+
+.btn:hover {
+  transform: scale(1.1);
 }
 
 .btn:focus {
@@ -52,6 +63,7 @@ body {
 .btn-block {
   display: block;
   width: 100%;
+  background: green;
 }
 
 .task {
